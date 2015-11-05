@@ -1,0 +1,61 @@
+language     , syntax     , type_checking , plpc     , perf     , size
+
+Awk          , C          , Dynamic       , 27       , 221      , 2084
+Bash         , OTHER      , Dynamic       , 18       , 276      , 1060
+C            , C          , Static        , 11       , 5916     , 1887
+Clojure      , Lisp       , Dynamic       , 30       , 1174     , 286
+CoffeeScript , OTHER      , Dynamic       , 37       , 2326     , 437
+C++          , C          , Static        , 7        , 5026     , 1432
+Crystal      , OTHER      , Static        , 1001     , 6012     , 890
+C#           , C          , Static        , 3        , 5414     , 1079
+Elixir       , OTHER      , Dynamic       , 101      , 223      , 613
+Erlang       , OTHER      , Dynamic       , 42       , -1       , 1054
+ES6          , C          , Dynamic       , 1        , 836      , 540
+Factor       , Stack      , Dynamic       , 130      , 4513     , 317
+Forth        , Stack      , OTHER         , 112      , 563      , 1312
+F#           , ML         , Static        , 34       , 6977     , 1055
+Go           , C          , Static        , 26       , 3048     , 1424
+Groovy       , C          , Dynamic       , 28       , 102      , 592
+Guile        , Lisp       , Dynamic       , 1001     , 63       , 606
+Haskell      , ML         , Static        , 23       , 1163     , 771
+Java         , C          , Static        , 2        , 17969    , 1372
+JS           , C          , Dynamic       , 1        , 1726     , 765
+Julia        , Algol      , Dynamic       , 76       , 764      , 497
+Kotlin       , C          , Static        , 89       , 13631    , 1531
+Lua          , Algol      , Dynamic       , 32       , 293      , 801
+Make         , OTHER      , OTHER         , 36       , 0        , 896
+mal          , Lisp       , OTHER         , 1002     , -1       , 221
+MATLAB       , Algol      , Dynamic       , 16       , 2        , 848
+miniMAL      , JSON       , Dynamic       , 1003     , 4        , 748
+Nim          , Python     , Static        , 148      , 11121    , 573
+OCaml        , ML         , Static        , 50       , 7063     , 543
+Perl         , C          , Dynamic       , 17       , 215      , 897
+PHP          , C          , Dynamic       , 4        , 331      , 793
+PostScript   , Stack      , Dynamic       , 90       , 48       , 1110
+Python       , Python     , Dynamic       , 5        , 304      , 538
+Racket       , Lisp       , Dynamic       , 62       , 2461     , 457
+R            , C          , Dynamic       , 14       , 28       , 695
+RPython      , Python     , Static        , 1001     , 21667    , 944
+Ruby         , OTHER      , Dynamic       , 12       , 1255     , 425
+Rust         , C          , Static        , 63       , 4834     , 1532
+Scala        , C          , Static        , 19       , 15963    , 735
+Swift        , C          , Static        , 15       , 2188     , 2058
+VB.NET       , Algol      , Static        , 46       , 4523     , 1366
+Vimscript    , Algol      , Dynamic       , 207      , 12       , 1072
+
+; - Language stats:
+;     sudo aptitude install ruby1.9.1-dev
+;     sudo gem install travis -v 1.8.0 --no-rdoc --no-ri
+; - Perf (sanity check):
+;     for x in $(seq 1 40); do echo 73.${x}; travis logs 73.${x} > logs/73.${x}; done
+;     for x in logs/*; do \
+;       impl=$(grep "export IMPL" $x | awk -F= '{print $2}'); \
+;       elapsed=$(grep "Elapsed" $x | awk '{print $3}'); \
+;       iters=$(grep "iters" $x | awk '{print $2}'); \
+;       printf "%10s %5.0f %5.0f %7.1f\n" $impl $elapsed $iters; \
+;     done | sort -rn -k4
+; - LOC:
+;     for impl in $(make stats-lisp | awk -F' |:' '/^Stats/{print $5}'); do \
+;       read loc com < <(echo $(make stats^$impl | awk '/total|comments/{print $1}')); \
+;       echo $impl ${loc} - ${com} = $(( loc - com )); \
+;     done
