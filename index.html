@@ -48,6 +48,9 @@
           <aside class="notes">
             <ul>
               <li>Have sized window for mal demo open
+              <li>Prune foo from Makefile and foo/
+              <li>Setup tmix sharing terminal on my side and on
+              presenter window.
               <li>Preload <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">guide</a>
               <li>Preload <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step0">step0 image</a>, <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step1">step1 image</a>, <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step2">step2 image</a> in presentation window for quick tabbing.
             </ul>
@@ -66,9 +69,11 @@
             <ul>
                 <li>My name is Joel Martin
                 <li>Principal Software Engineer at ViaSat, Inc
-                <li>Basically I get to write Clojure, work with some
-                amazing people, and work at a company that does
-                broadband Internet from space.
+                <li>At ViaSat I get to build systems using <span
+                class="next">&gt;&gt;</span> Clojure, work with some
+                amazing people, and <span class="next">&gt;&gt;</span>
+                work at a company that does broadband Internet from
+                space.
             </ul>
           </aside>
         </section>
@@ -77,15 +82,15 @@
           <h2>Welcome to Polyglossia</h2>
           <ul class="fragment" data-fragment-index="1">
             <li>Groovy (2003)
-            <li>Scala (2003)
+            <li>Scala (2004)
             <li>Go (2009)
             <li>Swift (2014)
           </ul>
           <ul class="fragment" data-fragment-index="2">
-            <li>Clojure (2003)
-            <li>Rust (2003)
-            <li>Dart (2009)
-            <li>Factor (2014)
+            <li>Clojure (2007)
+            <li>Rust (2010)
+            <li>Julia (2012)
+            <li>Dart (2013)
           </ul>
           <ul class="fragment" data-fragment-index="3">
             <li>Factor (2003)
@@ -117,26 +122,37 @@
           <p class="fragment" data-fragment-index="7">
             It's a Polyglot World
           </p>
+          <p class="fragment" data-fragment-index="8">
+            Learning learning is part of the job.
+          </p>
           <aside class="notes">
-            <p>
-              Show of hands: how many of you have written non-trivial
-              code in more than one programming language over the past:
-            </p>
             <ul>
-                <li>- year?
-                <li>- month?
-                <li>- week?
-                <li>- today?
+              <li>Show of hands: how many of you have written non-trivial
+              code in more than one programming language over the past:
+              <ul>
+                <li>- year?, - month?, - week?, - today?
+              </ul>
+              <li>The rate of language creation isn't slowing
+              down.
+              <li><span class="next">&gt;&gt;</span> I suspect almost
+              everybody here has heard of these
+              <li><span class="next">&gt;&gt;</span> There is a good
+              chance you've heard of these.
+              <li><span class="next">&gt;&gt;</span> But you not have
+              heard of these.  But in fact these are all really
+              interesting languages and you should look them up (after
+              this talk of course).
+              <li>As an industry we've moved from a <span
+              class="next">&gt;&gt;</span> standard language per
+              company/organization, <span class="next">&gt;&gt;</span>
+              to best language for the task, <span
+              class="next">&gt;&gt;</span> to best langauges for the
+              system.
+              <li><span class="next">&gt;&gt;</span> It's a PolyGlot
+              World. <span class="next">&gt;&gt;</span> Regularly
+              learning new languages is just part of what it means to
+              be a software developer.
             </ul>
-            <p>The rate of language creation isn't slowing down.</p>
-            <p>Hidden 1 [First Set]: I suspect almost everybody here
-            has heard of these</p>
-            <p>Hidden 2 [Second Set]: There is a good chance you've
-            heard of these.</p>
-            <p>Hidden 3 [Third Set]: But you not have heard of these.
-            But in fact these are all really interesting languages and
-            you should look them up (after this talk of course).</p>
-            <p>Hidden 4: "It's a PolyGlot World"</p>
           </aside>
         </section>
 
@@ -210,15 +226,36 @@
         <section>
           <h2>Learning is work!</h2>
           <h2 class="fragment">Work is inherently difficult</h2>
+          <p class="fragment">The typical process:</p>
+          <ul>
+            <li class="fragment">Hello world
+            <li class="fragment">Function definition and calling
+            <li class="fragment">Basic data types
+            <li class="fragment">Basic flow control constructs
+            <li class="fragment">Etc, etc, ad naseum
+          </ul>
           <aside class="notes">
-            Most popular languages have a wealth of learning
-            resources.  Many even have step-by-step incremental
-            tutorials to help you learn the language.] - [But learning
-            a new language is still a lot of work. The best learning
-            resources are like reading quirky books (e.g.  "Learn you
-            a Haskell for Great Good" and "Why's Poignant Guide to
-            Ruby"), but they are still mentally tiring.  But most
-            language learning resources feel more like this:
+            <ul>
+              <li>Most popular languages have a wealth of learning
+              resources. Many even have step-by-step incremental
+              tutorials to help you learn the language.
+              <li><span class="next">&gt;&gt;</span> But regardless,
+              the process usually involves <span
+              class="next">&gt;&gt;</span> <span
+              class="next">&gt;&gt;</span> <span
+              class="next">&gt;&gt;</span> <span
+              class="next">&gt;&gt;</span>
+              <li>Some of the best learning resources are like reading
+              quirky books (e.g.  "Learn you a Haskell for Great Good"
+              and "Why's Poignant Guide to Ruby"), but they are still
+              just basically humorous narrative forms of the same
+              process.
+              <li>And so language learning requires you to tediously
+              push your brain up hill a couple of inches at a time
+              until you reach a high enough foothill where you can
+              implement your first real thing in the language.
+              <li>It's hard work. <span class="next">&gt;&gt;</span>
+            </ul>
           </aside>
         </section>
 
@@ -231,14 +268,16 @@
           </blockquote>
           <p class="fragment">"Work" is not a thing, it's a state of mind.</p>
           <aside class="notes">
+            <span class="next">&gt;&gt;</span>
+            <p>A quote from Charles Coonradt</p>
             <p>Meat packers might act like they have the job from
             hell, but then those same people might gladly pay to go
             hunting in the dead of winter.</p>
             <p>The same people who have trouble pulling themselves out
-            of bed a 7AM to go to work in their air conditioned
-            office, will happily wake up at 4AM to go hunting in
-            frigid snow.</p>
-            <p></p>
+            of bed a 7AM to go to work in their 72 degree office, will
+            happily wake up at 4AM to go skiing in frigid weather.</p>
+            <p>The fact is <span class="next">&gt;&gt;</span> "Work"
+            is not a thing.
           </aside>
         </section>
 
@@ -258,17 +297,18 @@
                 <li>I'm going to tell you a personal story about
                 language learning.
                 <li>
-                    <ul>
-                        <li>Way back in 2013, Alan Dipert presented this at Clojure/conj
-                        <li>A Lisp implemented in bash [show mindblown]
-                        <li>Raised the question for me: what other
-                        non-traditional language could a Lisp be implemented
-                        in?
-                        <li>Had particular language in mind. As far as I knew,
-                        no one had ever written a Lisp using it. You'll see
-                        why in a moment.
-                    </ul>
-                <li>Lispy: a small and simple Python implementation of
+                  <ul>
+                    <li> <span class="next">&gt;&gt;</span> Way back in 2013, Alan Dipert presented this at Clojure/conj
+                    <li>A Lisp implemented in bash <span class="next">&gt;&gt;</span> [mindblown]
+                    <li>This was basically my reaction.
+                    <li>Raised the question for me: what other
+                    non-traditional language could a Lisp be
+                    implemented in?
+                    <li>Had particular language in mind. As far as
+                    I knew, no one had ever written a Lisp using it.
+                    You'll see why in a moment.
+                  </ul>
+                <li><span class="next">&gt;&gt;</span> Lispy: a small and simple Python implementation of
                 a Lisp interpreter by Peter Norvig. I used that as
                 a model.
             </ul>
@@ -278,6 +318,10 @@
         <section>
           <section>
             <h2>Mal Beginnings</h2>
+            <aside class="notes">
+              A bit on how mal began
+              <span class="next">&gt;&gt;</span>
+            </aside>
           </section>
 
           <section>
@@ -329,16 +373,21 @@ $(foreach ch,$(word 1,$($(1))),\
                 language that I was inspired to write a Lisp in.
                 Anybody willing to guess what language this example
                 code is written in?
-                <li>GNU Make. And yes, it's really does work and it's
-                a full implementation.
+                <li><span class="next">&gt;&gt;</span> GNU Make. And
+                yes, it's really does work and it's a full
+                implementation.
+                <li><span class="next">SWITCH</span>
                 <li>Demo
                 <pre style="background: #aaa;">
 cd make
-./mal.mk ../mal/hello.js
-cat ../mal/hello.js</pre>
-                <li>The name "Mal" original "MAke Lisp" because that
-                was all I was really originally intenteding to do. But
-                then I had the thought...
+make -f ./mal.mk
+user&gt; ( (fn* [a b] (* a b)) 7 8)
+less mal.mk</pre>
+                <li><span class="next">SWITCH</span>
+                <li><span class="next">SWITCH</span> The name "Mal"
+                original "MAke Lisp" because that was all I was really
+                originally intenteding to do. But then I had the
+                thought...
               </ul>
           </section>
           <section>
@@ -460,77 +509,7 @@ def read_form(reader):
               </ul>
             </aside>
           </section>
-        </section>
 
-        <section>
-          <h2>An Accidental Discovery</h2>
-          <p class="fragment">"<font color="green">Ma</font>ke <font color="green">L</font>isp" became "<font color="green">M</font>ake-<font color="green">A</font>-<font color="green">L</font>isp"
-          <aside class="notes">
-            <ul>
-              <li>At some point I began to realize that Mal had become
-              a very useful personal learning tool. I was able to
-              learn new languages more quickly and to a greater depth
-              than any other process I had used.
-              <li>But before we switch gears and focus on the language
-              learning aspects of the make-a-lisp process, let's
-              take brief look at mal the language along with a couple
-              of implementations.
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h2>Mal Itself</h2>
-          <p>Demo Time</p>
-          <img class="fragment" src="media/mindblown.gif"></img>
-          <aside class="notes">
-            <font size="1em">
-            <ul>
-              <li>Let's use the same hello world mal program from
-              before
-<pre style="margin: 0px; background: #aaa;">
-cd ../python
-cat ../mal/hello.py</pre>
-              <li>but let's run it with the python implementation:
-<pre style="margin: 0px; background: #aaa;">
-./mal.py ../mal/hello.py</pre>
-              <li>Let's try something a bit more interesting but this
-              time using the bash implementation:
-<pre style="margin: 0px; background: #aaa;">
-cd ../bash
-./mal.sh ../mal/clojurewest2014.mal</pre>
-              <li>That's a presentation for a lightning talke I did on
-              mal at Clojure West.
-<pre style="margin: 0px; background: #aaa;">
-less ../mal/clojurewest2014.mal</pre>
-              <li>That's all well and good, but let's bump it up
-              a notch or three:
-<pre style="margin: 0px; background: #aaa;">
-cd ../js
-./mal.js ../mal/mal.mal</pre>
-              <li>I'll just pause for a second to let you stew on
-              that.
-              <li>Yes, that's the mal implementation of mal
-              <li>[show gif]
-              <li>More specifically, that's the JavaScript
-              implementation of mal being used to run an
-              implementation of mal that is written in the mal
-              language itself]
-<pre style="margin: 0px; background: #aaa;">
-less ../mal/mal.mal</pre>
-              <li>And of course we can do this:
-<pre style="margin: 0px; background: #aaa;">
-./mal.js ../mal/mal.mal ../mal/hello.mal</pre>
-              <li>It's much slower, but it works the same
-            </ul>
-            </font>
-          </aside>
-        </section>
-
-        <section>
-          <section>
-            <h2>Mal and More Mal</h2>
-          </section>
           <section>
             <h2>PHP</h2>
             <pre><code class="php" data-trim contenteditable>
@@ -571,10 +550,85 @@ function read_form($reader) {
 ...
             </code></pre>
           </section>
+        </section>
 
+        <section>
+          <h2>An Accidental Discovery</h2>
+          <p class="fragment">"<font color="green">Ma</font>ke <font color="green">L</font>isp" became "<font color="green">M</font>ake-<font color="green">A</font>-<font color="green">L</font>isp"
+          <aside class="notes">
+            <ul>
+              <li>At some point I began to realize that Mal had become
+              a very useful personal learning tool. I was able to
+              learn new languages more quickly and to a greater depth
+              than any other process I had used before.
+              <li>But before we switch gears and focus on the language
+              learning aspects of the make-a-lisp process, let's
+              take brief look at mal the language along with a couple
+              of implementations.
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Mal Itself</h2>
+          <p>Demo Time</p>
+          <img class="fragment" src="media/mindblown.gif"></img>
+          <aside class="notes">
+            <span class="next">SWITCH</span>
+            <font size="1em">
+            <ul>
+              <li>Let's start with a hello world mal program:
+<pre style="margin: 0px; background: #aaa;">
+cd ../python
+cat ../mal/hello.py</pre>
+              <li>but let's run it with the python implementation:
+<pre style="margin: 0px; background: #aaa;">
+./mal.py ../mal/hello.py</pre>
+              <li>Let's try something a bit more interesting but this
+              time using the bash implementation:
+<pre style="margin: 0px; background: #aaa;">
+cd ../bash
+./mal.sh ../mal/clojurewest2014.mal</pre>
+              <li>That's a presentation for a lightning talke I did on
+              mal at Clojure West.
+<pre style="margin: 0px; background: #aaa;">
+less ../mal/clojurewest2014.mal</pre>
+              <li>That's all well and good, but let's bump it up
+              a notch or three:
+<pre style="margin: 0px; background: #aaa;">
+cd ../js
+./mal.js ../mal/mal.mal</pre>
+              <li>I'll just pause for a second to let you stew on
+              that.
+              <li>Yes, that's the mal implementation of mal
+
+              <li><span class="next">SWITCH</span> <span class="next">SWITCH</span> [show gif]
+              <li>This was basically my reaction at the moment when
+              mal became self-hosting.
+              <li>More specifically, that's the JavaScript
+              implementation of mal being used to run an
+              implementation of mal that is written in the mal
+              language itself]
+<!--
+<pre style="margin: 0px; background: #aaa;">
+less ../mal/mal.mal</pre>
+              <li>And of course we can do this:
+<pre style="margin: 0px; background: #aaa;">
+./mal.js ../mal/mal.mal ../mal/hello.mal</pre>
+              <li>It's much slower, but it works the same
+-->
+            </ul>
+            </font>
+          </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>Mal and More Mal</h2>
+          </section>
           <section>
             <h2>PostScript</h2>
-            <pre><code class="TODO" data-trim contenteditable>
+            <pre><code class="prolog" data-trim contenteditable>
 ...
 % read_form: read the next form from string start at idx
 /read_form { 3 dict begin
@@ -591,6 +645,15 @@ function read_form($reader) {
         3 -1 roll   /quote exch 2 _list   3 1 roll
 ...
             </code></pre>
+          <aside class="notes">
+            <p>Yes, Postscript the typesetting language.</p>
+            <p>After my lightning talk at Clojure West somebody
+            suggested Postscript and so I took up the challenge.</p>
+            <p>I had never written a line of code in
+            a stack-based/concatenative language like Postscript</p>
+            <p>More challenging than most, not as difficult as GNU
+            Make</p>
+          </aside>
           </section>
 
           <section>
@@ -687,6 +750,10 @@ fn read_form(rdr : &mut Reader) -> MalRet {
         },
 ...
             </code></pre>
+            <aside class="notes">
+              <p>More challenging then average, but it's a very
+              interesting language</p>
+            </aside>
           </section>
 
           <section>
@@ -825,7 +892,7 @@ function M.read_form(rdr)
           </section>
 
           <section>
-            <h2>OCaml</h2>
+            <h2><font color="green">OCaml</font></h2>
             <pre><code class="ocaml" data-trim contenteditable>
 ...
 and read_form all_tokens =
@@ -843,7 +910,15 @@ and read_form all_tokens =
             <aside class="notes">
               <ul>
                 <li>OCaml was implementation #23
-                <li>Notable because it was the first implementation done by somebody else.
+                <li>But there was a critical difference about the
+                OCaml implementation: it was created by someone else.
+                chouser (a friend and colleague who also wrote the
+                book "The Joy of Clojure")
+                <li>Marked a new era for mal (Jan 2015). The beginning
+                of a step-by-step guide. Other people have created
+                more implementations that I have since then.
+                <li>Mal and make-a-lisp was no longer just my pet
+                project.
               </ul>
             </aside>
           </section>
@@ -855,16 +930,16 @@ and read_form all_tokens =
                width="80%" style="box-shadow: none;"></img>
           <aside class="notes">
             <ul>
-              <li>Which bring us to today. [Display diagram]
+              <li>Which bring us to today. <span class="next">&gt;&gt;</span>
               <li>There are now 42 implementations.
               <li>14 of the last 20 were created by others.
               <li>The past 12 months have averaged more than
               2 implementations per month.
               <li>At this point you might be asking yourself "Why"?
-              Actually displaying it this way, I'm asking that myself.
-              Why go through all that work?
+              Actually looking at it this way, I'm asking that myself.
+              <li>Why go through all that work?
               <li>The answer is actually really simple: because it was
-              fun! And not just fun, but addictive.
+              fun! And not just fun, but addictive fun.
             </ul>
           </aside>
         </section>
@@ -873,7 +948,6 @@ and read_form all_tokens =
           <h2>Putting the Fun in Language Learning</h2>
           <p><span class="fragment">Buzzword alert:</span> <span class="fragment"><font color="yellow">Gamification</font></span></p>
           <p><span class="fragment">Make-A-Lisp is gamification of language learning</span></p>
-          <p><span class="fragment">The end goal happens to be a working Lisp interpreter</span></p>
           <aside class="notes">
             <ul>
               <li>Gamification as a term has become a bit tired. But
@@ -899,18 +973,30 @@ and read_form all_tokens =
           <aside class="notes">
             <ul>
               <li>These ideas are from Charles Coonradt's book "The
-              Game of Work". Originally writen in TODO YEAR. There's
-              been a lot more written about gamification since then
-              and many other ideas about how to turn work and other
-              hard activities into a game. But certainly, those
-              5 principles do encapsulate some of the most important
-              ideas.
+              Game of Work". Originally writen in 1984.
+              <li>Considered grandfather of gamification -- although
+              term was not coined until later.
+              <li>There's been a lot more written about gamification
+              since then and many other ideas about how to turn work
+              and other hard activities into a game. But certainly,
+              Coonradt's 5 principles do encapsulate some of the most
+              important ideas.
               <li>So let's talk about how the make-a-lisp process
-              applies those principles. 
+              applies those principles.
+              <ol>
+                <li>Clearly defined and measurable Goals
+                <li>Objective and standardized Scorekeeping
+                <li>A high degree of Choice
+                <li>Consistent Coaching and a well-defined Field of
+                Play
+                <li>Frequent Feedback
+              </ol>
               <li>As I mentioned before, I accidentally stumbled on
               many of these ideas in mal, but since that point I have
               been tweaking the process to try and maximize it's
               fun and utility.
+              <li>So let's look at how those principles apply to the
+              make-a-lisp process.
             </ul>
           </aside>
         </section>
@@ -918,28 +1004,30 @@ and read_form all_tokens =
         <section>
           <h2>Goals</h2>
           <ul>
-            <li class="fragment">Learn a New Language
-            <li class="fragment">Learn About Lisp
-            <li class="fragment">---
-            <li class="fragment">Create a Lisp (i.e. Mal implementation)
-            <li class="fragment">Get Eternal Glory <span class="fragment">(at <a href="https://github.com/kanaka/mal">https://github.com/kanaka/mal</a>)</span>
+            <li class="fragment" data-fragment-index="1">Learn a New Language
+            <li class="fragment" data-fragment-index="2">Learn About Lisp
+            <li class="fragment" data-fragment-index="3">---
+            <li class="fragment" data-fragment-index="3">Create a Lisp (i.e. Mal implementation)
+            <li class="fragment" data-fragment-index="4">Get Eternal
+            Glory <span class="fragment" data-fragment-index="5">(at
+            <a href="https://github.com/kanaka/mal">https://github.com/kanaka/mal</a>)</span>
             <ul>
-              <li class="fragment">Getting your implementation into
+              <li class="fragment" data-fragment-index="6">Getting your implementation into
               the main repository
               <ul>
-                <li class="fragment">First to implement a new target
-                <li class="fragment">Something unique and interesting
-                about your implemenation
+                <li>First to implement a new target
+                <li>Something unique and interesting about your
+                implemenation
               </ul>
-              <li class="fragment">Getting props for a re-implementation
+              <li class="fragment" data-fragment-index="7">Getting credit for a re-implementation
             </ul>
           </ul>
           <aside class="notes">
             <ul>
               <li>Goals: the desired results.
-              <li>Although the first two are the real goals, it's
-              important to have goals that are clear and easy to
-              measure/verify.
+              <li>Although the first two are the real goals, they
+              don't satisfy the requirement that goals are objective
+              and measurable
               <li>But as long as you don't cheat and copy another
               implementation, once you've created your mal
               implementation, you will have accomplished the former
@@ -963,29 +1051,18 @@ and read_form all_tokens =
           <p>Measure of progress towards goal</p>
           <ul>
             <li class="fragment" data-fragment-index="1">step0_repl
-<!--              <span class="fragment" data-fragment-index="2"> - Echo program-->
             <li class="fragment" data-fragment-index="1">step1_read_print
-<!--              <span class="fragment" data-fragment-index="3"> - Lisp syntax checker-->
             <li class="fragment" data-fragment-index="1">step2_eval
-<!--              <span class="fragment" data-fragment-index="4"> - Simple (prefix) calculator-->
             <li class="fragment" data-fragment-index="1">step3_env
-<!--              <span class="fragment" data-fragment-index="5"> - Simple (prefix) calculator with memory-->
             <li class="fragment" data-fragment-index="1">step4_if_fn_do
-<!--              <span class="fragment" data-fragment-index="6"> - Simple Lisp language-->
             <li class="fragment" data-fragment-index="1">step5_tco
-<!--              <span class="fragment" data-fragment-index="7"> - Tail-call optimization-->
             <li class="fragment" data-fragment-index="1">step6_file
-<!--              <span class="fragment" data-fragment-index="8"> - I/O, load-file, eval-->
             <li class="fragment" data-fragment-index="1">step7_quote
-<!--              <span class="fragment" data-fragment-index="9"> - Quoting/quasiquoting (code templating)-->
             <li class="fragment" data-fragment-index="1">step8_macros
-<!--             <span class="fragment" data-fragment-index="10"> - User defined language syntax-->
             <li class="fragment" data-fragment-index="1">step9_try
-<!--              <span class="fragment" data-fragment-index="11"> - Exception handling-->
             <li class="fragment" data-fragment-index="1">stepA_mal
-<!--              <span class="fragment" data-fragment-index="12"> - Self-hosting-->
           </ul>
-          <ul style="list-style-type: none; margin: 0px; padding: 0px;">
+          <ul style="color: #ffff44; list-style-type: none; margin: 0px; padding: 0px;">
             <li class="fragment" data-fragment-index="2">Echo program
             <li class="fragment" data-fragment-index="3">Syntax checker
             <li class="fragment" data-fragment-index="4">Simple calculator (prefix)
@@ -999,20 +1076,8 @@ and read_form all_tokens =
             <li class="fragment" data-fragment-index="12">Self-hosting
           </ul>
           <aside class="notes">
-            <ul>
-              <li>Simple and Objective
-              <li>Self-administered
-              <li>Comparison
-              <ul>
-                <li>personal past and present performance
-                <li>to accepted standard
-              </ul>
-              <li>Dynamic
-              <ul>
-                <li>know at all times where you stand
-              </ul>
-              <li>In the make-a-lisp process, there 11 scores (or
-              steps) towards the end goal
+              <li>In the make-a-lisp process, you score 11 points to
+              win the game i.e. achieve the goal.
             </ul>
           </aside>
         </section>
@@ -1025,23 +1090,28 @@ and read_form all_tokens =
             <li class="fragment">Implementation decisions
             <li class="fragment">Optional or deferrable steps/tasks
             <ul>
-              <li>step 5 / TCO
-              <li>readline editing/history
-              <li>metadata across all compound data-types
-              <li>keywords, vectors and hash-maps
-              <li>reader macros, comments
+              <li class="fragment">Optional:
+              <ul>
+                <li>step 5 / TCO
+                <li>readline editing/history
+                <li>metadata across all compound data-types
+                <li>keywords
+              </ul>
+              <li class="fragment">Deferrable (needed for self-hosting):
+              <ul>
+                <li>vectors and hash-maps
+                <li>reader macros, comments
+                <li>step 5 / TCO
+              </ul>
             </ul>
 
           </ul>
           <aside class="notes">
             <ul>
-              <li>Most steps have significant number of
-            deferrable features. Especially some data-types such as
-            strings, keywords, vectors, hash-maps.
-              <li>Some deferrable/optional things are required for
-              self-hosting such as vectors, hash-maps and function metadata.
-              Other things are purely optional such as keywords and
-              metadata on other data-types. 
+              <li>Some things are completely optional like Tail-Call
+              Optimization (step 5) and Clojure-style keywords.
+              <li>Many others things can be deferred to later steps
+              but are needed for full self-hosting.
             </ul>
           </aside>
         </section>
@@ -1062,7 +1132,16 @@ and read_form all_tokens =
           </ul>
           <aside class="notes">
             <ul>
-              <li>TODO "Field of Play" (see FAQ)
+              <li><span class="next">SHOW PAGES (turn head)</span>
+              <li><span class="next">&gt;&gt;</span> Psuedo-code that
+              you can diff to see what the difference between steps
+              is.
+              <li><span class="next">&gt;&gt;</span> FAQ: explains why
+              steps are structured the way they are and what form your
+              implementation needs to take to get accepted into
+              repository.
+              <li><span class="next">&gt;&gt;</span> #mal: interested
+              in any aspect of mal, please join channel.
             </ul>
           </aside>
         </section>
@@ -1077,10 +1156,16 @@ and read_form all_tokens =
             <pre><code class="bash" data-trim contenteditable>
 make test^MY_IMPL
 </code></pre>
+            <li class="fragment">Or:
+            <pre><code class="bash" data-trim contenteditable>
+make test^MY_IMPL^stepX
+</code></pre>
           </ul>
           <aside class="notes">
+            <span class="next">SWITCH</span>
             <ul>
               <li>Demo/show foo/python step0
+              <li>Stubs for the read/eval/print parts of REPL
               <li>Looking up keyboard input for python on
               stackoverflow
               <li>Put in wrong output
@@ -1089,11 +1174,28 @@ make test^MY_IMPL
               <li>Explain test counts and the output format
               <li>Fix output
               <li>Show test again
-              <li>
             </ul>
+            <span class="next">SWITCH</span>
           </aside>
         </section>
 
+        <section>
+          <h2>Game Overview</h2>
+          <ol>
+            <li class="fragment">Pick something from current step
+            <li class="fragment">Google, stackoverflow, references,
+            tutorials
+            <li class="fragment">Implement/tweak until passes test(s)
+            <li class="fragment">Repeat until step is done
+          </ol>
+          <aside class="notes">
+            <ul>
+              <li>Based on Guide, or Pseudo-code, or
+              test (TDD), pick a feature/functionality of current step
+              <li>Google, stackoverflow
+            </ul>
+          </aside>
+        </section>
         <section>
           <h2>Your Turn!</h2>
           <ul>
@@ -1116,7 +1218,7 @@ make test^MY_IMPL
               <li>Improve the game
               <ul>
                 <li>Graphical feedback
-                <li>Social aspect (programming competition, leaderboard,
+                <li>Social aspect (programming competition, leaderboard, badges,
                 etc)
               </ul>
               <li>Improve an existing implementation:
@@ -1137,6 +1239,61 @@ make test^MY_IMPL
         <section data-background="#ffffff">
           <img src="media/language_graph.png"
                width="70%" style="box-shadow: none;"></img>
+        </section>
+
+        <section>
+          <h2>New Implementation Ideas</h2>
+          <font size=5em>
+          <span style="padding: 50px">
+          <ul>
+            <li>Something old
+            <ul>
+              <li>Fortran
+              <li>COBOL
+              <li>Pascal
+              <li>Ada
+              <li>Assembly
+            </ul>
+          </ul>
+          </span>
+          <span style="padding: 50px">
+          <ul>
+            <li>Something new
+            <ul>
+              <li>Idris
+              <li>Io
+              <li>Dart
+              <li>Elm
+              <li>TypeScript
+            </ul>
+          </ul>
+          </span>
+
+          <br><br>
+
+          <span style="padding: 50px">
+          <ul>
+            <li>Something borrowed<br>(from another domain)
+            <ul>
+              <li>TeX
+              <li>PL/SQL
+              <li>Prolog
+              <li>Verilog / VHDL
+            </ul>
+          </ul>
+          </span>
+          <span style="padding: 50px">
+          <ul>
+            <li>Something blue<br>(corporate/government)
+            <ul>
+              <li>Objective-C
+              <li>PowerShell
+              <li>ColdFusion
+              <li>MUMPS (OpenM)
+            </ul>
+          </ul>
+          </font>
+          </span>
         </section>
       </div>
     </div>
