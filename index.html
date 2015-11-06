@@ -105,7 +105,7 @@
             <span style="position: relative; color: #ffea9a;">
               <span class="fragment fade-in" data-fragment-index="4" style="position: absolute;">
                 <span class="fragment fade-out" data-fragment-index="5">
-                Company/Organization
+                Organization
                 </span>
               </span>
               <span class="fragment fade-in" data-fragment-index="5" style="position: absolute;">
@@ -320,7 +320,7 @@
             <h2>Mal Beginnings</h2>
             <aside class="notes">
               A bit on how mal began
-              <span class="next">&gt;&gt;</span>
+              <span class="next">vv</span>
             </aside>
           </section>
 
@@ -383,11 +383,12 @@ cd make
 make -f ./mal.mk
 user&gt; ( (fn* [a b] (* a b)) 7 8)
 less mal.mk</pre>
-                <li><span class="next">SWITCH</span>
-                <li><span class="next">SWITCH</span> The name "Mal"
+                <li><span class="next">SWITCH</span> <span
+                    class="next">&gt;&gt;</span> The name "Mal"
                 original "MAke Lisp" because that was all I was really
                 originally intenteding to do. But then I had the
                 thought...
+                <li>Should be at <span class="next">10</span> min mark
               </ul>
           </section>
           <section>
@@ -561,6 +562,8 @@ function read_form($reader) {
               a very useful personal learning tool. I was able to
               learn new languages more quickly and to a greater depth
               than any other process I had used before.
+              <li><span class="next">&gt;&gt;</span> And so Make Lisp
+              became Make-A-Lisp
               <li>But before we switch gears and focus on the language
               learning aspects of the make-a-lisp process, let's
               take brief look at mal the language along with a couple
@@ -950,11 +953,13 @@ and read_form all_tokens =
           <p><span class="fragment">Make-A-Lisp is gamification of language learning</span></p>
           <aside class="notes">
             <ul>
+              <li><span class="next">&gt;&gt;</span> Buzzword alert:
+                <span class="next">&gt;&gt;</span> 
               <li>Gamification as a term has become a bit tired. But
               the principle it is referring to is really important.
               <li>The reason that the make-a-lisp process has worked
               so well (and not just for me) is because it evolved into
-              an addictive game.
+              an addictive game. <span class="next">&gt;&gt;</span>
               <li>Now let's dive into how we turn work into a game.
             </ul>
           </aside>
@@ -981,8 +986,8 @@ and read_form all_tokens =
               and other hard activities into a game. But certainly,
               Coonradt's 5 principles do encapsulate some of the most
               important ideas.
-              <li>So let's talk about how the make-a-lisp process
-              applies those principles.
+              <li>So let's talk about what these principle are and how
+              the make-a-lisp process applies those principles.
               <ol>
                 <li>Clearly defined and measurable Goals
                 <li>Objective and standardized Scorekeeping
@@ -995,6 +1000,9 @@ and read_form all_tokens =
               many of these ideas in mal, but since that point I have
               been tweaking the process to try and maximize it's
               fun and utility.
+              <li>Also, this process isn't complete. I think there is
+              much more that could be done to make make-a-lisp more
+              fun and effictive.
               <li>So let's look at how those principles apply to the
               make-a-lisp process.
             </ul>
@@ -1088,21 +1096,18 @@ and read_form all_tokens =
           <ul>
             <li class="fragment">Target language and tools
             <li class="fragment">Implementation decisions
-            <li class="fragment">Optional or deferrable steps/tasks
+            <li class="fragment">Optional steps/tasks
             <ul>
-              <li class="fragment">Optional:
-              <ul>
-                <li>step 5 / TCO
-                <li>readline editing/history
-                <li>metadata across all compound data-types
-                <li>keywords
-              </ul>
-              <li class="fragment">Deferrable (needed for self-hosting):
-              <ul>
-                <li>vectors and hash-maps
-                <li>reader macros, comments
-                <li>step 5 / TCO
-              </ul>
+              <li>step 5 / TCO
+              <li>readline editing/history
+              <li>metadata across all compound data-types
+              <li>keywords
+            </ul>
+            <li class="fragment">Deferrable (needed for self-hosting):
+            <ul>
+              <li>step 5 / TCO
+              <li>vectors and hash-maps
+              <li>reader macros, comments
             </ul>
 
           </ul>
@@ -1128,10 +1133,12 @@ and read_form all_tokens =
             </ul>
             <li class="fragment">Psuedo-code for each step
             <li class="fragment">FAQ at <a href="https://github.com/kanaka/mal/blob/master/docs/FAQ.md">blob/master/docs/FAQ.md</a>
-            <li class="fragment">#mal channel on freenode
+            <li class="fragment"><span style="color: green">#mal</span> channel on freenode
           </ul>
           <aside class="notes">
             <ul>
+              <li><span class="next">Step-by-step guide is the main
+                coaching tool.
               <li><span class="next">SHOW PAGES (turn head)</span>
               <li><span class="next">&gt;&gt;</span> Psuedo-code that
               you can diff to see what the difference between steps
@@ -1140,7 +1147,8 @@ and read_form all_tokens =
               steps are structured the way they are and what form your
               implementation needs to take to get accepted into
               repository.
-              <li><span class="next">&gt;&gt;</span> #mal: interested
+              <li><span class="next">&gt;&gt;</span> <span
+              style="color: green">#mal</span>: interested
               in any aspect of mal, please join channel.
             </ul>
           </aside>
@@ -1162,37 +1170,41 @@ make test^MY_IMPL^stepX
 </code></pre>
           </ul>
           <aside class="notes">
-            <span class="next">SWITCH</span>
             <ul>
-              <li>Demo/show foo/python step0
+              <li>[Read through slide]
+              <li><span class="next">SWITCH</span>
+              <li>Update Makefile with 3 foo changes
               <li>Stubs for the read/eval/print parts of REPL
-              <li>Looking up keyboard input for python on
-              stackoverflow
-              <li>Put in wrong output
+              <li>Lookup up python input on stackoverflow
+              <li>Broken output
               <li>Show test file
               <li>Run test
               <li>Explain test counts and the output format
               <li>Fix output
               <li>Show test again
+              <li><span class="next">SWITCH BACK</span>
             </ul>
-            <span class="next">SWITCH</span>
           </aside>
         </section>
 
         <section>
-          <h2>Game Overview</h2>
-          <ol>
-            <li class="fragment">Pick something from current step
-            <li class="fragment">Google, stackoverflow, references,
-            tutorials
-            <li class="fragment">Implement/tweak until passes test(s)
-            <li class="fragment">Repeat until step is done
-          </ol>
+          <h2>Game Overview (Turns)</h2>
+          <ul>
+            <li class="fragment">For each step:
+            <ol>
+              <li class="fragment">Choose a step task
+              <li class="fragment">Google, stackoverflow, references, tutorials
+              <li class="fragment">Implement/tweak until tests pass
+              <li class="fragment">Repeat until step is done
+            </ol>
+          </ul>
           <aside class="notes">
             <ul>
+              <li>Reminder <span class="next">SLIDES visible?</span>
               <li>Based on Guide, or Pseudo-code, or
               test (TDD), pick a feature/functionality of current step
               <li>Google, stackoverflow
+              <li>Iterate between 2 &amp; 3
             </ul>
           </aside>
         </section>
@@ -1209,24 +1221,8 @@ make test^MY_IMPL^stepX
             <ul>
               <li>Learn a new language using mal
               <li>Create an new implementation:
-              <ul>
-                <li>Something old: Fortran, COBOL, Ada, Pascal
-                <li>Something new: Idris, Io, Dart, Elm
-                <li>Something borrowed: Objective-C, Tcl, Tex
-                <li>Something blue: MUMPS
-              </ul>
               <li>Improve the game
-              <ul>
-                <li>Graphical feedback
-                <li>Social aspect (programming competition, leaderboard, badges,
-                etc)
-              </ul>
               <li>Improve an existing implementation:
-              <ul>
-                <li>More idiomatic
-                <li>More memory efficient, better performing
-                <li>Better target language interop
-              </ul>
               <li>Do some research using existing mal implementations
             </ul>
           </aside>
@@ -1234,6 +1230,10 @@ make test^MY_IMPL^stepX
 
         <section>
           <h2>Questions</h2>
+        </section>
+
+        <section>
+          <h2>Extra Material</h2>
         </section>
 
         <section data-background="#ffffff">
