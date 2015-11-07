@@ -49,8 +49,8 @@
             <ul>
               <li>Have sized window for mal demo open
               <li>Prune foo from Makefile and foo/
-              <li>Setup tmix sharing terminal on my side and on
-              presenter window.
+              <li>Build impls: bash, python, js, mal
+              <li>Setup screen sharing
               <li>Preload <a href="https://github.com/kanaka/mal/blob/master/process/guide.md">guide</a>
               <li>Preload <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step0">step0 image</a>, <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step1">step1 image</a>, <a href="https://github.com/kanaka/mal/blob/master/process/guide.md#step2">step2 image</a> in presentation window for quick tabbing.
             </ul>
@@ -577,9 +577,10 @@ function read_form($reader) {
           <p>Demo Time</p>
           <img class="fragment" src="media/mindblown.gif"></img>
           <aside class="notes">
-            <span class="next">SWITCH</span>
             <font size="1em">
             <ul>
+              <li>Should be at <span class="next">15</span> min mark
+              <li><span class="next">SWITCH</span>
               <li>Let's start with a hello world mal program:
 <pre style="margin: 0px; background: #aaa;">
 cd ../python
@@ -605,9 +606,13 @@ cd ../js
               that.
               <li>Yes, that's the mal implementation of mal
 
-              <li><span class="next">SWITCH</span> <span class="next">SWITCH</span> [show gif]
+              <li><span class="next">SWITCH</span>[show gif]
               <li>This was basically my reaction at the moment when
               mal became self-hosting.
+              <li><span class="next">SWITCH</span>
+<pre style="margin: 0px; background: #aaa;">
+less ../mal/mal.mal
+</pre>
               <li>More specifically, that's the JavaScript
               implementation of mal being used to run an
               implementation of mal that is written in the mal
@@ -922,6 +927,7 @@ and read_form all_tokens =
                 more implementations that I have since then.
                 <li>Mal and make-a-lisp was no longer just my pet
                 project.
+                <li>Should be at <span class="next">20</span> min mark
               </ul>
             </aside>
           </section>
@@ -954,7 +960,7 @@ and read_form all_tokens =
           <aside class="notes">
             <ul>
               <li><span class="next">&gt;&gt;</span> Buzzword alert:
-                <span class="next">&gt;&gt;</span> 
+                <span class="next">&gt;&gt;</span>
               <li>Gamification as a term has become a bit tired. But
               the principle it is referring to is really important.
               <li>The reason that the make-a-lisp process has worked
@@ -989,12 +995,16 @@ and read_form all_tokens =
               <li>So let's talk about what these principle are and how
               the make-a-lisp process applies those principles.
               <ol>
-                <li>Clearly defined and measurable Goals
-                <li>Objective and standardized Scorekeeping
-                <li>A high degree of Choice
-                <li>Consistent Coaching and a well-defined Field of
-                Play
-                <li>Frequent Feedback
+                <li><span class="next">&gt;&gt;</span>
+                Clearly defined and measurable Goals
+                <li><span class="next">&gt;&gt;</span>
+                Objective and standardized Scorekeeping
+                <li><span class="next">&gt;&gt;</span>
+                A high degree of Choice
+                <li><span class="next">&gt;&gt;</span>
+                Consistent Coaching and a well-defined Field of Play
+                <li><span class="next">&gt;&gt;</span>
+                Frequent Feedback
               </ol>
               <li>As I mentioned before, I accidentally stumbled on
               many of these ideas in mal, but since that point I have
@@ -1200,7 +1210,7 @@ make test^MY_IMPL^stepX
           </ul>
           <aside class="notes">
             <ul>
-              <li>Reminder <span class="next">SLIDES visible?</span>
+              <li>Reminder <span class="next" id="reminder">SLIDES visible?</span>
               <li>Based on Guide, or Pseudo-code, or
               test (TDD), pick a feature/functionality of current step
               <li>Google, stackoverflow

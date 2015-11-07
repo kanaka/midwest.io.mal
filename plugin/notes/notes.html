@@ -407,5 +407,19 @@
 			})();
 
 		</script>
+
+		<script>
+			// Blink reminder
+			window.setInterval(function() {
+				var r = document.getElementById('reminder');
+				console.log("r.style.visibility:", r.style.visibility);
+				if (r.style.visibility === 'hidden') {
+				r.style.visibility = 'visible';
+				} else {
+				r.style.visibility = 'hidden';
+				}
+			}, 333);
+		</script>
+
 	</body>
 </html>
