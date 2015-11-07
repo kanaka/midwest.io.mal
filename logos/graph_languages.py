@@ -79,34 +79,34 @@ for s in syntax_names:
                           edgecolor=syntax_colors[s],
                           label=s))
 
-###p2 = []
-###for t in type_names:
-###    p2.append(plt.scatter(None,None,
-###                          s=100,
-###                          c=type_colors[t],
-###                          edgecolor='w',
-###                          label=t))
-###
-###p3 = []
-####loc_sizes = [500, 1000, 1500]
-###loc_sizes = [1000]
-###loc_names = ["1 kLOC"]
-###for sz in loc_sizes:
-###    p3.append(plt.scatter(None,None,
-###                          s=sz,
-###                          c='grey',
-###                          edgecolor='w',
-###                          label=sz))
-###
-###legend1 = plt.legend(p1, syntax_names, title="Syntax Family", loc="lower right")
-###legend2 = plt.legend(p2, type_names, title="Type Discipline", loc="upper left")
-####legend3 = plt.legend(p3, loc_names, title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left",
-####                     prop = {'size': 20})
-####legend3 = plt.legend(p3, loc_names, title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left")
-###legend3 = plt.legend([], [], title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left")
-###plt.gca().add_artist(legend1)
-###plt.gca().add_artist(legend2)
-###plt.gca().add_artist(legend3)
+p2 = []
+for t in type_names:
+    p2.append(plt.scatter(None,None,
+                          s=100,
+                          c=type_colors[t],
+                          edgecolor='w',
+                          label=t))
+
+p3 = []
+#loc_sizes = [500, 1000, 1500]
+loc_sizes = [1000]
+loc_names = ["1 kLOC"]
+for sz in loc_sizes:
+    p3.append(plt.scatter(None,None,
+                          s=sz,
+                          c='grey',
+                          edgecolor='w',
+                          label=sz))
+
+legend1 = plt.legend(p1, syntax_names, title="Syntax Family", loc="lower right")
+legend2 = plt.legend(p2, type_names, title="Type Discipline", loc="upper left")
+#legend3 = plt.legend(p3, loc_names, title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left",
+#                     prop = {'size': 20})
+#legend3 = plt.legend(p3, loc_names, title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left")
+legend3 = plt.legend([], [], title="Radius = Code Size\n(excluding comments/blanks)", loc="lower left")
+plt.gca().add_artist(legend1)
+plt.gca().add_artist(legend2)
+plt.gca().add_artist(legend3)
 
 plt.xlabel('Increasing Popularity (PLPC: langpop.corger.nl) -->')
 plt.xticks([])
