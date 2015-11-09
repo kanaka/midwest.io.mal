@@ -47,6 +47,7 @@
           <p>Joel Martin</p>
           <aside class="notes">
             <ul>
+              <li>Silence phone
               <li>Have sized window for mal demo open
               <li>Prune foo from Makefile and foo/
               <li>Build impls: bash, python, js, mal
@@ -273,9 +274,11 @@
             <p>Meat packers might act like they have the job from
             hell, but then those same people might gladly pay to go
             hunting in the dead of winter.</p>
+            <!--
             <p>The same people who have trouble pulling themselves out
             of bed a 7AM to go to work in their 72 degree office, will
             happily wake up at 4AM to go skiing in frigid weather.</p>
+            -->
             <p>The fact is <span class="next">&gt;&gt;</span> "Work"
             is not a thing.
           </aside>
@@ -288,7 +291,7 @@
               <li class="fragment" data-fragment-index="3">lispy</li>
               <span class="fragment fade-in" data-fragment-index="2">
                 <span class="fragment fade-out" data-fragment-index="3">
-                  <img src="media/surprised-baby.gif"></img>
+                  <img src="media/mindblown.gif"></img>
                 </span>
               </span>
           </ul>
@@ -414,9 +417,15 @@ READ_FORM () {
                 different structure compared to Gherkin. So I decided
                 to try my hand at Bash.
                 <li>Began to see patterns. Started thinking in terms
-                of small digestable chunks, partly just due to the
-                fact my job and life meant I only had short segments
+                of small digestable chunks, largely due to the fact my
+                life, job and school meant I only had short segments
                 of time to work on it.
+                <li>Often it was at night while working on graduate
+                classes when I would take a 5-10 minute break and work
+                on whatever current mal implementation I happened to
+                have in the pipeline. And I'm not that brilliant so
+                I was forced to make a process that was very gradual
+                and incremental.
               </ul>
             </aside>
           </section>
@@ -575,7 +584,7 @@ function read_form($reader) {
         <section>
           <h2>Mal Itself</h2>
           <p>Demo Time</p>
-          <img class="fragment" src="media/mindblown.gif"></img>
+          <img class="fragment" src="media/surprised-baby.gif"></img>
           <aside class="notes">
             <font size="1em">
             <ul>
@@ -616,7 +625,9 @@ less ../mal/mal.mal
               <li>More specifically, that's the JavaScript
               implementation of mal being used to run an
               implementation of mal that is written in the mal
-              language itself]
+              language itself
+              <li>Self-hosting is the term for an interpreter or
+              compiler that is written in it's own language.
 <!--
 <pre style="margin: 0px; background: #aaa;">
 less ../mal/mal.mal</pre>
@@ -941,12 +952,16 @@ and read_form all_tokens =
             <ul>
               <li>Which bring us to today. <span class="next">&gt;&gt;</span>
               <li>There are now 42 implementations.
-              <li>14 of the last 20 were created by others.
+              <li>14 of the last 20 were created by others. And of the
+              six I created many were either variations of exisiting
+              implementations (like ES6 and rpython) or to learn
+              a language for one of my PhD classes (like MATLAB) [or
+              experiment with a language idea for work (miniMAL)].
               <li>The past 12 months have averaged more than
               2 implementations per month.
               <li>At this point you might be asking yourself "Why"?
-              Actually looking at it this way, I'm asking that myself.
-              <li>Why go through all that work?
+              Why did a bunch of people go through the work to do
+              this?
               <li>The answer is actually really simple: because it was
               fun! And not just fun, but addictive fun.
             </ul>
@@ -1182,17 +1197,6 @@ make test^MY_IMPL^stepX
           <aside class="notes">
             <ul>
               <li>[Read through slide]
-              <li><span class="next">SWITCH</span>
-              <li>Update Makefile with 3 foo changes
-              <li>Stubs for the read/eval/print parts of REPL
-              <li>Lookup up python input on stackoverflow
-              <li>Broken output
-              <li>Show test file
-              <li>Run test
-              <li>Explain test counts and the output format
-              <li>Fix output
-              <li>Show test again
-              <li><span class="next">SWITCH BACK</span>
             </ul>
           </aside>
         </section>
@@ -1218,6 +1222,31 @@ make test^MY_IMPL^stepX
             </ul>
           </aside>
         </section>
+
+        <section>
+          <h2>Let's Play</h2>
+          <ul>
+            <li class="fragment">Round one
+          </ul>
+          <aside class="notes">
+            <ul>
+              <li><span class="next">&gt;&gt;</span> Now I'm going to
+              show you round one of this game.
+              <li><span class="next">SWITCH</span>
+              <li>Update Makefile with 3 foo changes
+              <li>Stubs for the read/eval/print parts of REPL
+              <li>Lookup up python input on stackoverflow
+              <li>Broken output
+              <li>Show test file
+              <li>Run test
+              <li>Explain test counts and the output format
+              <li>Fix output
+              <li>Show test again
+              <li><span class="next">SWITCH BACK</span>
+            </ul>
+          </aside>
+        </section>
+
         <section>
           <h2>Your Turn!</h2>
           <ul>
@@ -1226,20 +1255,33 @@ make test^MY_IMPL^stepX
             <li>Improve the game
             <li>Improve an existing implementation
             <li>Do some language research with mal implementations
+            <li>Make a cool logo for mal
           </ul>
           <aside class="notes">
             <ul>
               <li>Learn a new language using mal
               <li>Create an new implementation:
               <li>Improve the game
-              <li>Improve an existing implementation:
+              <li>Improve an existing implementation: e.g. Haskell
               <li>Do some research using existing mal implementations
+              <li>If you're more design inclined, a logo for mal.
             </ul>
           </aside>
         </section>
 
         <section>
           <h2>Questions</h2>
+        </section>
+
+        <section>
+          <h2>References</h2>
+          <ul>
+            <li><a href="https://github.com/kanaka/mal">https://github.com/kanaka/mal</a>
+            <li><a href="https://github.com/kanaka/midwest.io.mal">https://github.com/kanaka/midwest.io.mal</a>
+            <li><span style="color: green">#mal</span> (freenode)
+            <li><a href="http://twitter.com/buskanaka">@buskanaka</a>
+            <li><a href="viasat.com">viasat.com</a>
+          </ul>
         </section>
 
         <section>
