@@ -1,11 +1,12 @@
 # Achievement Unlocked: A Better Path to Language Learning #
 
 This is a [reveal.js](https://github.com/hakimel/reveal.js) based
-presentation that was given at [Midwest.io 2015](http://midwest.io)
+presentation that was given at [Midwest.io](http://midwest.io) on
+Nov 9, 2015.
 
 ### Setup
 
-Some reveal.js features, like external Markdown and speaker notes, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.
+Some reveal.js features, like external Markdown and speaker notes, require that presentations run from a local web server.
 
 1. Install [Node.js](http://nodejs.org/)
 
