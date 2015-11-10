@@ -42,7 +42,10 @@ Some reveal.js features, like external Markdown and speaker notes, require that 
 ## License
 
 This presentation (index.html) is MPL 2.0 licensed
+
 Copyright (C) 2015 Joel Martin, https://github.com/kanaka
 
+
 reveal.js is MIT licensed
+
 Copyright (C) 2015 Hakim El Hattab, http://hakim.se
